@@ -22,7 +22,6 @@
                         <span v-else class="col-sm-8">
                            <h5>{{ todo.name }}</h5>
                         </span>
-                        
                       </div>
                    </li>
                 </ul>
@@ -43,8 +42,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   name: 'app',
   methods: {
-     clearInp: function(inp) {
-      inp = this.inputField;
+     clearInp: function() {
        this.inputField = '';
    },
     addTodo: function(todo) {
